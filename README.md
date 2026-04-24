@@ -1,11 +1,11 @@
-# 🧠 TheAlgoritham
+# Algoritham
 
 A collection of algorithms implemented in Python.
 This repository contains simple and useful algorithms that I’ve built while learning, experimenting, and improving my problem-solving skills.
 
 ---
 
-## 🚀 About
+## About
 
 **TheAlgoritham** is a personal project where I implement different algorithms from scratch.
 The goal is to understand how things work internally rather than just using built-in functions.
@@ -14,7 +14,7 @@ This is not a “perfect” library — it’s a **learning + building journey**
 
 ---
 
-## 📂 What’s Inside
+## What’s Inside
 
 * Basic algorithms
 * Custom implementations
@@ -30,13 +30,13 @@ Examples may include:
 
 ---
 
-## 🛠 Tech Used
+## Tech Used
 
-* Python 3
+* Python
 
 ---
 
-## 🎯 Purpose
+## Purpose
 
 * Improve algorithmic thinking
 * Practice coding fundamentals
@@ -44,21 +44,6 @@ Examples may include:
 * Share simple implementations with others
 
 ---
-
-## ⚡ How to Use
-
-Clone the repository:
-
-```bash
-git clone https://github.com/YOUR_USERNAME/thealgoritham.git
-cd thealgoritham
-```
-
-Run any file:
-
-```bash
-python filename.py
-```
 
 ---
 
@@ -72,12 +57,6 @@ More algorithms and improvements will be added over time.
 ## 🤝 Contributing
 
 This is mainly a personal learning repo, but suggestions and improvements are always welcome.
-
----
-
-## 📄 License
-
-Open for learning and educational use.
 
 ---
 
