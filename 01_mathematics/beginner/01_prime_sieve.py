@@ -44,3 +44,53 @@ print (sieve_of_eratosthenes(30))
 
 # print(optimized_sieve(30))
 # this is optimized varient 
+
+# ANIMATED VERSION 
+import time
+import os
+
+def clear():
+    os.system("cls" if os.name == "nt" else "clear")
+
+def sieve_visual(n):
+    if n < 2:
+        print("No primes available.")
+        return
+
+    primes = [True] * (n + 1)
+    primes[0] = primes[1] = False
+
+    for i in range(2, int(n**0.5) + 1):
+        if primes[i]:
+            for j in range(i*i, n+1, i):
+                if primes[j]:  # avoid re-processing
+                    primes[j] = False
+
+                    clear()
+                    print(f"🧠 Sieve of Eratosthenes (n={n})\n")
+                    print(f"Base prime: {i}")
+                    print(f"Removing multiple: {j}\n")
+
+                    # improved visualization
+                    for k in range(2, n+1):
+                        if k == j:
+                            print(f"[{k:2}]", end=" ")   # current removal
+                        elif not primes[k]:
+                            print(" x ", end=" ")       # removed
+                        else:
+                            print(f"{k:3}", end=" ")     # still prime candidate
+
+                    print("\n")
+                    time.sleep(0.05)
+
+    clear()
+    result = [i for i in range(2, n+1) if primes[i]]
+
+    print("✅ FINAL PRIMES:\n")
+    print(result)
+    print(f"\nTotal primes: {len(result)}")
+
+
+# INPUT
+n = int(input("Generate primes up to: "))
+sieve_visual(n)
