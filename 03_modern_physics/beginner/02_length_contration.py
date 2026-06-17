@@ -18,7 +18,6 @@
 
 # # Contracted length
 # L_prime = L * factor
-
 # print("Proper length:", L, "m")
 # print("Velocity:", v, "m/s")
 # print("Contracted length:", L_prime, "m")
